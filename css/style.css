@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+p{
+    font-size: 18px;
+}
+header {
+	padding: 40px 0;
+}
+#intro{
+    position: relative;
+    /* margin-top: 60px; */
+}
+.text-box{
+    position: relative;
+	top: 150px;
+}
+.image-box{
+    position: relative;
+	top: 30px;
+}
+#projects{
+    position: relative;
+    margin-top: 200px;
+}
+.project-list li {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    transition: all .6s;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.05), 0 0 3px 0 rgba(0,0,0,.1);
+}
+#skills{
+    position: relative;
+}
+.skill-list{
+    list-style-type: none;
+}
+.text-center {
+    text-align: center;
+}
+.skill-list li {
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    transition: all .6s;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.05), 0 0 3px 0 rgba(0,0,0,.1);
+}
+.flex{
+    display: flex;
+}
+/* .block{
+    display: block;
+} */
+.justify-center {
+    justify-content: center;
+}
+.rounded-lg {
+    border-radius: .5rem;
+}
+.items-end {
+    align-items: flex-end;
+}
+.m-2 {
+    margin: .5rem;
+}
+.skill-list svg {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+.w-auto {
+    width: auto;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.h-auto {
+    height: auto;
+}
+.mt-3 {
+    margin-top: .75rem;
+}
+.mb-1 {
+    margin-bottom: .25rem;
+}
+.font-bold {
+    font-weight: 700;
+}

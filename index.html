@@ -5,36 +5,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="loading">
-        loading...
-    </div>
-    <div align="center" id="mainContainer" hidden>
-        <img id="profileImage" height="100" width="100" alt="Profile Image">
-        <h2 id="fullName"></h2>
-        <p id="bio"></p>
-        <h5 id="followersInformation"></h5>
-        <p>Check me on <a id="githubLink">Github</a></p>
-        <a class="twitter-timeline" data-width="300" data-height="400"
-            href="https://twitter.com/nembang_allen?ref_src=twsrc%5Etfw">Tweets by nembang_allen</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+    <!-- <div id="pre-loader">
+        <div class="loader">
+            <img src="" alt="">
+        </div>
+    </div> -->
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href=""><img height="50" src="images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                    <ul class="mr-auto"></ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:nembangallen@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="text-box">
+                        <p>
+                            Hi there, I'm <strong id="fullName"></strong> &#x1F44B;
+                            <br>
+                            <small id="bio"></small>
+                        </p>
+                        <h1>Web Developer</h1>
+                        <p>
+                            I help people and brands reach their goals by designing & building<br>
+                            user-centric digital products and interactive experiences
+                        </p>
+                        <h5 id="followersInformation"></h5>
+                        <p>Check me on <a target="_blank" rel="nofollow" id="githubLink">Github</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-box">
+                        <img width="400" src="images/proimage.png" alt="Allen Nembang">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="title" align="center">
+                <h2>My Projects</h2>
+                <p>I have done some projects listed on GitHub</p>
+                <div class="project-list">
+                    <ul id="projectContent"
+                        class="flex block flex-wrap items-center justify-center project-list load-hidden v-scroll-reveal"
+                        data-sr-id="52"
+                        style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                        <!-- <li class="p-4 rounded-lg flex items-end justify-center m-2">
+                            <div align="left">
+                                <a href="#">
+                                    <h4>Data-Science-with-Python</h4>
+                                </a>
+                                <p>Architecture and code guidelines we use at ribot when developing for Android</p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <div class="title" align="center">
+                <h2>Skills</h2>
+                <p>For those who know what they're looking for...</p>
+            </div>
+            <div class="my-skills text-center">
+                <ul class="flex block flex-wrap items-center justify-center skill-list load-hidden v-scroll-reveal"
+                    data-sr-id="52"
+                    style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;">
+                    <li class="p-4 rounded-lg flex items-end justify-center m-2">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="400" width="800" viewBox="0 0 800 400"
+                                class="w-auto mx-auto h-auto block PHP">
+                                <path
+                                    d="M63.3008 84.3398H181.944c34.8253.2943 60.0591 10.2793 75.7014 29.9561 15.6415 19.6776 20.8068 46.55 15.4945 80.6171-2.0663 15.5657-6.6408 30.8372-13.7237 45.8152-6.7883 14.978-16.2328 28.4874-28.3327 40.5288-14.7569 15.2715-30.5462 24.9632-47.3687 29.075-16.8225 4.1117-34.2356 6.1675-52.2384 6.1675H78.3526L61.53 400.2003H-.005L63.3008 84.3398m51.7957 50.2205L88.5346 266.7195c1.7707.2934 3.5415.4406 5.3124.4406h6.1978c28.3327.2934 51.9427-2.4964 70.8317-8.3701 18.8882-6.1674 31.5786-27.6063 38.0721-64.3175 5.3121-30.8372-.0002-48.6047-15.9371-53.3042-15.6423-4.6988-35.2689-6.9015-58.879-6.608-3.5417.2934-6.9357.4405-10.182.4405-2.9515.0002-6.0503.0002-9.2967 0l.4427-.4405M343.2533.2234h61.0924l-17.2653 84.1413h54.8946c30.1035.5877 52.5333 6.755 67.2902 18.5023 15.0517 11.748 19.4787 34.068 13.281 66.9607l-29.6609 146.6967h-61.9777l28.3327-140.0887c2.9508-14.6838 2.0656-25.1103-2.6562-31.2777-4.7224-6.1673-14.9048-9.2512-30.5462-9.2512l-49.1395-.4405-36.3013 181.0581h-61.0924L343.2533.2234M588.1574 84.3398h118.6431c34.8254.2943 60.0592 10.2793 75.7015 29.9561 15.6414 19.6776 20.8068 46.55 15.4944 80.6171-2.0662 15.5657-6.6407 30.8372-13.7236 45.8152-6.7884 14.978-16.2329 28.4874-28.3327 40.5288-14.757 15.2715-30.5462 24.9632-47.3688 29.075-16.8225 4.1117-34.2356 6.1675-52.2384 6.1675h-53.1238l-16.8225 83.7008h-61.5351l63.3059-315.8605m51.7957 50.2205l-26.562 132.1592c1.7708.2934 3.5416.4406 5.3125.4406h6.1977c28.3327.2934 51.9428-2.4964 70.8318-8.3701 18.8882-6.1674 31.5786-27.6063 38.072-64.3175 5.3122-30.8372-.0002-48.6047-15.9371-53.3042-15.6423-4.6988-35.2689-6.9015-58.8789-6.608-3.5417.2934-6.9357.4405-10.182.4405-2.9515.0002-6.0504.0002-9.2967 0l.4427-.4405">
+                                </path>
+                            </svg>
+                            <span class="font-bold block mt-3 mb-1">
+                                PHP
+                            </span>
+                        </div>
+                    </li>
+                    <li class="p-4 rounded-lg flex items-end justify-center m-2">
+                        <div>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 447.674 447.674"
+                                style="enable-background:new 0 0 447.674 447.674;" xml:space="preserve">
+                                <g>
+                                    <path style="fill:#00769D;" d="M134.289,138.16h-24.722l67.399,190.521l37.732-107.825l-29.254-82.696H159.36v-18.154h115.508
+                               v18.154h-27.049l67.398,190.521l24.227-69.234c31.781-88.702-26.048-116.333-26.048-136.129s16.048-35.843,35.843-35.843
+                               c1.071,0,2.111,0.058,3.13,0.153c-33.541-31.663-78.768-51.08-128.534-51.08c-65.027,0-122.306,33.146-155.884,83.458h66.336
+                               v18.154L134.289,138.16L134.289,138.16z" />
+                                    <path style="fill:#00769D;" d="M36.548,223.837c0,71.704,40.302,133.986,99.483,165.458l-84.52-238.919
+                               C41.883,172.932,36.548,197.761,36.548,223.837z" />
+                                    <path style="fill:#00769D;" d="M386.833,131.547c2.679,15.774,1.868,33.503-2.243,51.301h0.745l-2.832,8.092l0,0
+                               c-1.678,5.843-3.791,11.82-6.191,17.693l-64.444,180.541c59.057-31.51,99.256-93.725,99.256-165.338
+                               C411.124,190.279,402.29,158.788,386.833,131.547z" />
+                                    <path style="fill:#00769D;" d="M166.075,402.033c18.195,5.894,37.603,9.091,57.762,9.091c19.228,0,37.777-2.902,55.239-8.285
+                               l-54.784-154.862L166.075,402.033z" />
+                                    <path style="fill:#00769D;" d="M382.113,65.56C339.836,23.283,283.625,0,223.836,0S107.837,23.283,65.56,65.56S0,164.047,0,223.837
+                               c0,59.789,23.283,115.999,65.56,158.276s98.488,65.56,158.277,65.56s115.999-23.283,158.277-65.56
+                               c42.277-42.277,65.56-98.488,65.56-158.276C447.673,164.047,424.39,107.837,382.113,65.56z M223.836,431.883
+                               c-114.717,0-208.046-93.329-208.046-208.046S109.119,15.79,223.836,15.79s208.046,93.33,208.046,208.047
+                               S338.554,431.883,223.836,431.883z" />
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+
+                            <span class="font-bold block mt-3 mb-1">
+                                WordPress
+                            </span>
+                        </div>
+                    </li>
+                    <li class="p-4 rounded-lg flex items-end justify-center m-2">
+                        <div>
+                            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m437 146h-91v90h-220v110c0 11.046875 8.953125 20 20 20v71c0 41.421875 33.578125 75 75 75h70c41.421875 0 75-33.578125 75-75v-41h-89.574219c-8.078125 0-15.027343-6.207031-15.410156-14.273438-.40625-8.617187 6.460937-15.726562 14.984375-15.726562h161c41.421875 0 75-33.578125 75-75v-70c0-41.421875-33.578125-75-75-75zm0 0"
+                                    fill="#feef55" />
+                                <path
+                                    d="m437 146h-91v90h-90v276h35c41.421875 0 75-33.578125 75-75v-41h-89.574219c-8.078125 0-15.027343-6.207031-15.410156-14.273438-.40625-8.617187 6.460937-15.726562 14.984375-15.726562h161c41.421875 0 75-33.578125 75-75v-70c0-41.421875-33.578125-75-75-75zm0 0"
+                                    fill="#fedc00" />
+                                <path
+                                    d="m186 256h140c22.089844 0 40-17.910156 40-40v-141c0-41.355469-33.644531-75-75-75h-70c-41.355469 0-75 33.644531-75 75v41h90c8.285156 0 15 6.714844 15 15s-6.714844 15-15 15h-161c-41.355469 0-75 33.644531-75 75v70c0 41.355469 33.644531 75 75 75h71v-70c0-22.089844 17.910156-40 40-40zm0 0"
+                                    fill="#78e0ea" />
+                                <path
+                                    d="m291 0h-35v256h70c22.089844 0 40-17.910156 40-40v-141c0-41.355469-33.644531-75-75-75zm0 0"
+                                    fill="#3cccdd" />
+                                <path
+                                    d="m236 61c0 8.285156-6.714844 15-15 15s-15-6.714844-15-15 6.714844-15 15-15 15 6.714844 15 15zm0 0"
+                                    fill="#5a5a6e" />
+                                <path
+                                    d="m306 451c0 8.285156-6.714844 15-15 15s-15-6.714844-15-15 6.714844-15 15-15 15 6.714844 15 15zm0 0"
+                                    fill="#46465a" /></svg>
+                            <span class="font-bold block mt-3 mb-1">
+                                Python
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="p-4 rounded-lg flex items-end justify-center m-2">
+                        <div>
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1200.000000pt"
+                                height="1200.000000pt" viewBox="0 0 1200.000000 1200.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                    stroke="none">
+                                    <path d="M0 6000 l0 -6000 6000 0 6000 0 0 6000 0 6000 -6000 0 -6000 0 0
+-6000z m2490 461 l0 -1339 -48 -11 c-207 -44 -577 -76 -777 -68 -245 11 -417
+51 -580 135 -71 37 -109 66 -181 137 -77 76 -98 105 -137 185 -135 273 -137
+656 -7 929 151 316 427 487 830 516 86 7 235 -4 298 -21 l22 -6 0 441 0 441
+290 0 290 0 0 -1339z m920 1034 l0 -295 -290 0 -290 0 0 295 0 295 290 0 290
+0 0 -295z m1257 -556 c125 -14 236 -49 311 -99 64 -43 96 -79 132 -149 46 -91
+49 -148 50 -893 0 -655 -1 -697 -17 -702 -54 -15 -359 -43 -607 -56 -235 -12
+-408 -2 -527 31 -255 71 -373 230 -373 504 0 168 37 274 131 376 31 33 86 78
+123 100 136 80 368 144 623 171 l119 12 -4 97 c-3 86 -6 100 -27 122 -35 38
+-106 51 -232 44 -171 -10 -411 -72 -551 -143 -26 -13 -52 -24 -58 -24 -6 0
+-10 75 -10 220 l0 220 38 19 c233 118 603 181 879 150z m1834 1 c360 -34 563
+-184 626 -461 15 -66 17 -151 18 -744 l0 -670 -290 0 -290 0 -5 625 -5 625
+-23 47 c-42 85 -107 113 -257 112 -58 0 -132 -7 -177 -18 l-78 -17 0 -690 0
+-689 -287 2 -288 3 -3 876 -2 875 132 32 c353 83 678 116 929 92z m4084 -20
+c373 -100 596 -384 635 -809 32 -345 -69 -655 -277 -853 -170 -161 -385 -238
+-669 -238 -161 0 -266 16 -387 60 -293 107 -483 352 -537 692 -20 126 -8 390
+23 511 91 344 329 572 677 648 122 27 418 21 535 -11z m-1640 10 c121 -11 423
+-58 442 -69 8 -4 -20 -72 -86 -211 l-98 -205 -67 4 -67 3 6 -103 c4 -57 8
+-369 8 -694 2 -617 -2 -700 -43 -862 -46 -177 -103 -276 -235 -408 -82 -82
+-116 -109 -190 -147 -184 -95 -359 -131 -630 -130 -206 0 -344 20 -513 73
+l-102 33 0 268 c0 147 2 268 5 268 3 0 29 -12 57 -26 260 -132 686 -162 881
+-63 122 63 190 182 206 364 4 50 7 91 5 93 -1 2 -33 -8 -71 -21 -104 -38 -206
+-51 -346 -44 -146 7 -248 31 -366 88 -69 34 -101 58 -176 133 -137 136 -198
+263 -231 479 -48 311 39 622 229 823 193 204 443 310 842 357 70 9 439 6 540
+-3z m-5537 -775 c2 -457 -1 -814 -8 -913 -17 -261 -53 -414 -133 -565 -81
+-153 -186 -256 -365 -360 l-99 -57 -267 126 c-146 70 -266 130 -266 133 0 3
+39 26 87 50 237 121 369 281 422 509 40 172 43 254 48 1055 l5 777 287 -2 286
+-3 3 -750z" />
+                                    <path d="M1610 6469 c-112 -20 -206 -78 -264 -162 -55 -80 -77 -155 -83 -282
+-11 -235 57 -384 210 -460 95 -47 197 -62 332 -49 l100 9 3 462 2 462 -37 11
+c-56 15 -200 20 -263 9z" />
+                                    <path d="M4580 5843 c-210 -31 -302 -57 -357 -99 -46 -35 -63 -73 -63 -143 0
+-53 4 -65 30 -95 51 -58 134 -73 310 -56 180 17 160 -9 160 211 l0 189 -27 -1
+c-16 -1 -39 -3 -53 -6z" />
+                                    <path d="M10163 6463 c-62 -22 -137 -94 -173 -166 -77 -157 -80 -451 -6 -612
+40 -89 119 -163 198 -186 18 -5 66 -10 107 -10 216 -1 341 180 341 496 0 138
+-19 230 -67 325 -42 81 -103 138 -173 159 -52 15 -176 12 -227 -6z" />
+                                    <path d="M8278 6454 c-80 -19 -172 -67 -228 -120 -91 -85 -130 -194 -130 -364
+0 -218 68 -349 218 -418 76 -34 216 -41 317 -15 l70 18 -3 370 c-1 204 -5 409
+-8 458 l-6 87 -87 -1 c-47 0 -112 -7 -143 -15z" />
+                                </g>
+                            </svg>
+
+                            <span class="font-bold block mt-3 mb-1">
+                                Django
+                            </span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
     <script>
         fetch("https://api.github.com/users/nembangallen")
             .then(res => res.json())
             .then(function (data) {
-                console.log(data);
+                // console.log(data);
                 let followersCount = data.followers;
                 let followersInfo = `I have been followed by ${followersCount} awesome people in Github`;
-                document.getElementById('profileImage').src = data.avatar_url;
-                document.getElementById('fullName').textContent = data.name;
+                document.getElementById("fullName").textContent = data.name;
                 document.getElementById('bio').textContent = data.bio;
-                document.getElementById('followersInformation').textContent = followersInfo;
-                document.getElementById('githubLink').href = data.html_url;
-                document.getElementById('mainContainer').hidden = false;
-                document.getElementById('loading').hidden = true;
+                document.getElementById("githubLink").href = data.html_url;
+                document.getElementById("followersInformation").textContent = followersInfo;
+            });
+        fetch("https://api.github.com/users/nembangallen/repos")
+            .then(res => res.json())
+            .then(function (repos) {
+                var html = "";
+                repos.map(repo => {
+                    // console.log(repo);
+                    html += "<li class='p-4 rounded-lg flex items-end justify-center m-2'>" +
+                        "<div align = 'left'>" +
+                        "<a target='_blank' rel='nofollow' href=" + repo.html_url + ">" +
+                        "<h4>" + repo.name + "</h4>" +
+                        "</a>" +
+                        "<p>" + repo.description + "</p>" +
+                        "</div>" +
+                        "</li >";
+                });
+                document.getElementById("projectContent").innerHTML = html;
             })
     </script>
 </body>

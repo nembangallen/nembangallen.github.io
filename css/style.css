@@ -38,8 +38,8 @@ header {
 
 .project-list li {
     background-color: #fff;
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: auto;
     transition: all .6s;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.05), 0 0 3px 0 rgba(0,0,0,.1);
 }
@@ -184,4 +184,13 @@ footer{
   #myBtn:hover {
     background-color: white;
     color: #007bff;
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    #contact{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
   }
